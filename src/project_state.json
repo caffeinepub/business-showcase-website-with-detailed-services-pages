@@ -1,0 +1,228 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 17,
+  "summary": "Build a clean business showcase website for Bhuv Enterprises (waterproofing company) that presents the company and provides detailed information about waterproofing services offered to clients and customers.",
+  "architectural_notes": [
+    "Business/site content provided: company name 'Bhuv Enterprises' with waterproofing-focused About copy and services to include Sump Waterproofing, Terrace Waterproofing, and Bathroom Grouting (each with detailed descriptions).",
+    "User provided contact details to add to site content: phone +91 8792404477, email service.bhuventerprises@gmail.com.",
+    "User requested to add a specific logo asset to the site (logo file needs to be provided/attached).",
+    "User requests to add the previously provided tagline to the site branding.",
+    "User requests to add the previously provided business address to site contact/details content.",
+    "Tagline confirmed by user to use in site branding: \"Protecting Structures. Preserving Values.\""
+  ],
+  "known_issues": [
+    "Site logo is not visible (user reports logo not rendering).",
+    "Build/deployment encountered a configuration error (\"Configuration error encountered. Please reach out to the Caffeine team\")."
+  ],
+  "isFixRequest": true,
+  "imageRequirements": "## Edit Images\n- Optimize/crop the uploaded logo for use as a square app logo (IMG_4371-5.PNG > business-logo.dim_512x512.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-business-showcase-website-with-clear-top-level-navigation-and-page-sections-that-introduce-the-business-and-help-visitors-understand-what-the-company-does",
+      "title": "Create a responsive business showcase website with clear top-level navigation and page sections that introduce the business and help visitors understand what the company does.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-services-section-that-lists-all-services-offered-and-provide-a-dedicated-detail-view-for-each-service-with-a-full-description-and-key-information",
+      "title": "Implement a Services section that lists all services offered, and provide a dedicated detail view for each service with a full description and key information.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-use-english-for-all-user-facing-text-and-add-sensible-placeholder-copy-and-service-examples-that-can-be-easily-edited-later-business-name-tagline-service-descriptions",
+      "title": "Use English for all user-facing text and add sensible placeholder copy and service examples that can be easily edited later (business name, tagline, service descriptions).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-visual-theme-across-the-site-colors-typography-spacing-buttons-cards-with-a-distinct-professional-style-appropriate-for-a-business-website-avoiding-a-blue-purple-dominant-palette",
+      "title": "Apply a cohesive visual theme across the site (colors, typography, spacing, buttons, cards) with a distinct, professional style appropriate for a business website, avoiding a blue/purple-dominant palette.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-static-image-assets-for-the-site-logo-and-hero-banner-and-render-them-in-the-ui-without-routing-image-delivery-through-the-backend",
+      "title": "Add static image assets for the site (logo and hero banner) and render them in the UI without routing image delivery through the backend.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-hardcoded-business-branding-text-with-values-from-frontend-src-content-sitecontent-ts-e-g-business-name-used-in-the-header-and-footer-so-business-details-can-be-edited-in-one-place",
+      "title": "Replace hardcoded business branding text with values from frontend/src/content/siteContent.ts (e.g., business name used in the header and footer) so business details can be edited in one place.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-concise-skimmable-business-details-section-to-the-home-page-that-surfaces-key-contact-details-email-phone-and-address-using-values-from-sitecontent-contact",
+      "title": "Add a concise, skimmable 'Business Details' section to the Home page that surfaces key contact details (email, phone, and address) using values from siteContent.contact.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-improve-logo-presentation-and-accessibility-by-ensuring-the-existing-generated-logo-is-displayed-crisply-in-the-header-with-appropriate-alt-text-that-references-the-business-name",
+      "title": "Improve logo presentation and accessibility by ensuring the existing generated logo is displayed crisply in the header with appropriate alt text that references the business name.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-frontend-src-content-sitecontent-ts-to-reflect-the-bhuv-enterprises-branding-content-provided-by-the-user-including-business-name-and-the-main-business-overview-description-text",
+      "title": "Update frontend/src/content/siteContent.ts to reflect the Bhuv Enterprises branding content provided by the user, including business name and the main business overview/description text.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-placeholder-services-in-frontend-src-content-sitecontent-ts-with-the-three-services-provided-by-the-user-sump-waterproofing-terrace-waterproofing-and-bathroom-grouting-each-with-an-english-summary-full-description-and-a-highlights-list-suitable-for-the-existing-services-list-and-service-details-ui",
+      "title": "Replace the existing placeholder services in frontend/src/content/siteContent.ts with the three services provided by the user: Sump waterproofing, Terrace waterproofing, and Bathroom grouting, each with an English summary, full description, and a highlights list suitable for the existing Services list and Service Details UI.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-about-content-in-frontend-src-content-sitecontent-ts-sitecontent-about-story-mission-approach-to-match-the-user-provided-company-copy-team-experience-mission-quality-materials-techniques-communication-commitment-keeping-it-in-clear-english-and-formatted-for-the-existing-about-page-sections",
+      "title": "Update the About content in frontend/src/content/siteContent.ts (siteContent.about.story / mission / approach) to match the user-provided company copy (team experience, mission, quality materials/techniques, communication commitment), keeping it in clear English and formatted for the existing About page sections.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-centralized-contact-details-in-frontend-src-content-sitecontent-ts-to-use-the-user-provided-phone-number-and-email-address-for-bhuv-enterprises-phone-91-8792404477-email-service-bhuventerprises-gmail-com-replacing-the-current-placeholder-values",
+      "title": "Update the centralized contact details in frontend/src/content/siteContent.ts to use the user-provided phone number and email address for Bhuv Enterprises (phone: +91 8792404477, email: service.bhuventerprises@gmail.com), replacing the current placeholder values.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-user-uploaded-bhuv-enterprises-logo-to-the-frontend-static-assets-and-use-it-as-the-site-logo-shown-in-the-header",
+      "title": "Add the user-uploaded Bhuv Enterprises logo to the frontend static assets and use it as the site logo shown in the header.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-centralized-business-tagline-in-frontend-src-content-sitecontent-ts-to-the-exact-tagline-previously-provided-by-the-user-and-ensure-the-tagline-is-visibly-rendered-in-the-site-branding-at-minimum-the-home-page-hero-and-the-siteheader-area",
+      "title": "Update the centralized business tagline in frontend/src/content/siteContent.ts to the exact tagline previously provided by the user, and ensure the tagline is visibly rendered in the site branding (at minimum the Home page hero and the SiteHeader area).",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-centralized-business-address-in-frontend-src-content-sitecontent-ts-to-the-exact-address-previously-provided-by-the-user-and-ensure-all-places-that-show-the-address-home-page-business-details-and-contact-page-location-card-reflect-the-updated-address",
+      "title": "Update the centralized business address in frontend/src/content/siteContent.ts to the exact address previously provided by the user, and ensure all places that show the address (Home page Business Details and Contact page Location card) reflect the updated address.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-the-site-logo-not-being-visible-by-ensuring-the-header-logo-asset-path-is-correct-and-the-logo-renders-reliably-in-siteheader-across-environments-local-and-deployed",
+      "title": "Fix the site logo not being visible by ensuring the header logo asset path is correct and the logo renders reliably in SiteHeader across environments (local and deployed).",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-user-provided-logo-as-a-frontend-static-asset-and-ensure-it-renders-reliably-in-the-site-header-across-environments-local-and-deployed",
+      "title": "Add the user-provided logo as a frontend static asset and ensure it renders reliably in the site header across environments (local and deployed).",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-business-tagline-is-sourced-from-frontend-src-content-sitecontent-ts-and-is-visibly-rendered-in-the-site-branding-at-minimum-in-the-header-and-the-home-page-hero",
+      "title": "Ensure the business tagline is sourced from frontend/src/content/siteContent.ts and is visibly rendered in the site branding (at minimum in the header and the Home page hero).",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-centralized-business-tagline-in-frontend-src-content-sitecontent-ts-to-exactly-protecting-structures-preserving-values-and-ensure-that-this-updated-tagline-is-visibly-rendered-wherever-sitecontent-business-tagline-is-displayed-at-minimum-in-the-siteheader-and-the-home-page-hero",
+      "title": "Update the centralized business tagline in frontend/src/content/siteContent.ts to exactly: \"Protecting Structures. Preserving Values.\" and ensure that this updated tagline is visibly rendered wherever siteContent.business.tagline is displayed (at minimum in the SiteHeader and the Home page hero).",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-use-the-user-uploaded-image-img-4371-5-png-as-the-site-logo-and-ensure-the-header-logo-renders-reliably-across-environments-local-and-deployed-without-falling-back-to-the-text-based-placeholder",
+      "title": "Use the user-uploaded image IMG_4371-5.PNG as the site logo and ensure the header logo renders reliably across environments (local and deployed) without falling back to the text-based placeholder.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a business showcase website (company overview, branding, clear presentation for visitors)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add services section/pages that list services and show detailed descriptions for each service",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add more business details/content and incorporate a logo into the site branding (header/hero as appropriate)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add the user-provided logo to the website branding (header/hero as appropriate)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add the user-provided tagline to the site branding (e.g., header/hero)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add the user-provided business address to the site content (e.g., Business Details/Contact section)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Fix the site logo not being visible in the UI (ensure logo renders properly in header)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Business showcase website with detailed services pages",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

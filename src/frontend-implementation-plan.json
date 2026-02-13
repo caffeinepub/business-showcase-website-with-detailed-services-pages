@@ -1,0 +1,44 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Apply new logo asset and update site tagline",
+  "requirements": [
+    {
+      "id": "REQ-19",
+      "summary": "Update centralized business tagline and ensure it renders in the header and Home hero.",
+      "acceptanceCriteria": [
+        "frontend/src/content/siteContent.ts has siteContent.business.tagline set to exactly \"Protecting Structures. Preserving Values.\" (including punctuation).",
+        "The header displays the updated tagline on desktop (where the tagline is currently shown).",
+        "The Home page hero displays the updated tagline."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/content/siteContent.ts",
+          "operation": "modify",
+          "description": "Update siteContent.business.tagline to exactly \"Protecting Structures. Preserving Values.\" and keep it as the single source of truth for tagline text."
+        }
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "summary": "Add the uploaded logo as a static asset and ensure the SiteHeader logo image loads reliably without triggering fallback.",
+      "acceptanceCriteria": [
+        "The uploaded logo image is added to the frontend static assets and is the image used by the header logo <img>.",
+        "The SiteHeader logo image successfully loads (no broken image) and does not trigger the onError fallback in normal operation.",
+        "The logo remains crisp and properly contained within the existing header logo container at typical viewport sizes."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/business-logo.dim_512x512.png",
+          "operation": "create",
+          "description": "Add the optimized square logo asset (from generated/business-logo.dim_512x512.png) into the public static assets at frontend/public/assets/generated/business-logo.dim_512x512.png so it is available across local and deployed environments."
+        },
+        {
+          "path": "frontend/src/components/layout/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Ensure the header logo <img> uses the static asset at frontend/public/assets/generated/business-logo.dim_512x512.png in a deployment-safe way (e.g., prefixing with the app base URL) so it loads reliably and does not trigger the onError fallback during normal operation. Verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

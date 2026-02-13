@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up TanStack Router with routes for Home, Services, Service Details, About, and Contact pages, all wrapped in a shared SiteLayout.",
+  "frontend/src/components/layout/SiteLayout.tsx": "Root layout component that renders the site header, main content outlet, and footer with consistent structure across all pages.",
+  "frontend/src/components/layout/SiteHeader.tsx": "Responsive header component with logo from /assets/generated/business-logo.dim_512x512.png with improved error fallback showing business initial, business name and tagline displayed in branding area, desktop navigation menu, and mobile drawer menu using Sheet component.",
+  "frontend/src/components/layout/SiteFooter.tsx": "Footer component displaying copyright with business name from siteContent and attribution link to caffeine.ai with proper UTM tracking parameters.",
+  "frontend/src/pages/HomePage.tsx": "Home page featuring hero section with tagline, business overview, why choose us highlights, business details section with contact information (email, phone, address with proper text wrapping), and services preview with CTAs.",
+  "frontend/src/pages/ServicesPage.tsx": "Services listing page displaying all available services in a responsive grid with cards linking to individual service detail pages using type-safe TanStack Router navigation.",
+  "frontend/src/pages/ServiceDetailsPage.tsx": "Service detail page showing comprehensive information about a specific service including overview, key benefits, and CTAs, with not-found state for invalid service IDs.",
+  "frontend/src/pages/AboutPage.tsx": "About page presenting the company story, mission, and approach in organized card sections.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page displaying email, phone, and location information in icon cards with proper text wrapping for address, along with business hours in a dedicated card.",
+  "frontend/src/content/siteContent.ts": "Centralized content configuration file containing Bhuv Enterprises waterproofing business information with updated tagline \"Protecting Structures. Preserving Values.\", address (Bangalore, Karnataka, India), three waterproofing services with detailed descriptions, about content, and contact details.",
+  "frontend/src/index.css": "Global styles with OKLCH-based design system using charcoal and warm amber palette, avoiding blue/purple dominance, with comprehensive light and dark mode support.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with custom colors mapped to CSS variables, enhanced shadows, and typography settings for the professional design system.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file for future React Query hooks; currently unused as all content is client-side static data."
+}

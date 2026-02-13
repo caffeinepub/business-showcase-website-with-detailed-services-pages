@@ -1,2 +1,3 @@
-# business-showcase-website-with-detailed-services-pages
-Exported from Caffeine project: Business showcase website with detailed services pages
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

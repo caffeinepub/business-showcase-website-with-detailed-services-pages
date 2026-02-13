@@ -1,0 +1,39 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-centralized-business-tagline-in-frontend-src-content-sitecontent-ts-to-exactly-protecting-structures-preserving-values-and-ensure-that-this-updated-tagline-is-visibly-rendered-wherever-sitecontent-business-tagline-is-displayed-at-minimum-in-the-siteheader-and-the-home-page-hero",
+      "featureTitle": "Update the centralized business tagline in frontend/src/content/siteContent.ts to exactly: \"Protecting Structures. Preserving Values.\" and ensure that this updated tagline is visibly rendered wherever siteContent.business.tagline is displayed (at minimum in the SiteHeader and the Home page hero).",
+      "files": [
+        "frontend/src/content/siteContent.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-19"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-use-the-user-uploaded-image-img-4371-5-png-as-the-site-logo-and-ensure-the-header-logo-renders-reliably-across-environments-local-and-deployed-without-falling-back-to-the-text-based-placeholder",
+      "featureTitle": "Use the user-uploaded image IMG_4371-5.PNG as the site logo and ensure the header logo renders reliably across environments (local and deployed) without falling back to the text-based placeholder.",
+      "files": [],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-20"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

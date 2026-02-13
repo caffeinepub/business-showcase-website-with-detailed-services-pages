@@ -1,0 +1,39 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-13T07:40:47.998Z",
+  "summary": "REQ-19 appears implemented by updating the centralized tagline in siteContent.ts; however REQ-20 is not implemented because no uploaded logo asset was added and there is no diff evidence that the header <img> was switched to use IMG_4371-5.PNG-derived square logo across environments.",
+  "missing_requirements": [
+    {
+      "id": "REQ-20",
+      "requirement": "Use the user-uploaded image IMG_4371-5.PNG as the site logo and ensure the header logo renders reliably across environments without falling back to the text-based placeholder.",
+      "reason": "The diff shows no new static asset added for the uploaded logo (Added: 0 files). There is also no code diff for SiteHeader to confirm the header <img> was updated to use the uploaded image-derived asset and to avoid triggering the onError fallback in normal operation.",
+      "evidence": [
+        "File diff summary: \"Added: 0\" (no new image asset added)",
+        "frontend-file-summaries.txt (describes logo path, but no actual asset addition or SiteHeader code diff is shown)"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Project metadata/state updates (project_state.json version/summary changes) not requested by the BuildRequest.",
+      "reason": "The BuildRequest is narrowly scoped to tagline and logo updates; modifying project_state.json is not requested as part of requirements or acceptance criteria.",
+      "evidence": [
+        "project_state.json (modified, truncated)"
+      ]
+    },
+    {
+      "description": "Updating/generated documentation-like file frontend-file-summaries.txt not requested by the BuildRequest.",
+      "reason": "The BuildRequest does not request adding or updating repository summary documentation files.",
+      "evidence": [
+        "frontend-file-summaries.txt (modified)"
+      ]
+    }
+  ],
+  "confidence": 0.67,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/content/siteContent.ts",
+    "project_state.json"
+  ]
+}

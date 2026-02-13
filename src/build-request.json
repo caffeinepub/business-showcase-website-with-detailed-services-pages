@@ -1,0 +1,72 @@
+{
+  "kind": "build_request",
+  "title": "Apply uploaded logo and update tagline to “Protecting Structures. Preserving Values.”",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-19",
+      "text": "Update the centralized business tagline in frontend/src/content/siteContent.ts to exactly: \"Protecting Structures. Preserving Values.\" and ensure that this updated tagline is visibly rendered wherever siteContent.business.tagline is displayed (at minimum in the SiteHeader and the Home page hero).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4",
+          "msg-8"
+        ],
+        "quotes": [
+          "add this as my logo and tag line as- \" Protecting Structures. Preserving Values.\"",
+          "yes please"
+        ]
+      },
+      "acceptanceCriteria": [
+        "frontend/src/content/siteContent.ts has siteContent.business.tagline set to exactly \"Protecting Structures. Preserving Values.\" (including punctuation).",
+        "The header displays the updated tagline on desktop (where the tagline is currently shown).",
+        "The Home page hero displays the updated tagline."
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "text": "Use the user-uploaded image IMG_4371-5.PNG as the site logo and ensure the header logo renders reliably across environments (local and deployed) without falling back to the text-based placeholder.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4",
+          "msg-8"
+        ],
+        "quotes": [
+          "add this as my logo and tag line as- \" Protecting Structures. Preserving Values.\"",
+          "yes please"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The uploaded logo image is added to the frontend static assets and is the image used by the header logo <img>.",
+        "The SiteHeader logo image successfully loads (no broken image) and does not trigger the onError fallback in normal operation.",
+        "The logo remains crisp and properly contained within the existing header logo container at typical viewport sizes."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit any files under frontend/src/components/ui (compose existing UI components instead).",
+    "Do not modify immutable paths listed in SYSTEM_CONTEXT.frontend.immutablePaths.",
+    "Keep user-facing text in English."
+  ],
+  "nonGoals": [
+    "Fixing or diagnosing the Caffeine build/deployment configuration error outside of code changes.",
+    "Adding new pages, routes, authentication flows, or backend features beyond the logo/tagline update."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": [
+      "Optimize/crop the uploaded logo for use as a square app logo (IMG_4371-5.PNG > business-logo.dim_512x512.png)"
+    ]
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}
